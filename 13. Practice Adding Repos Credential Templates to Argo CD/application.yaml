@@ -1,0 +1,37 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata: 
+  name: app-1
+  namespace: argocd
+spec: 
+  destination: 
+    namespace: app-1
+    server: "https://kubernetes.default.svc"
+  project: default
+  source: 
+    path: guestbook
+    repoURL: "https://github.com/prabinay/agro-CD-https.git"
+    targetRevision: master
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+
+-------------------------------------
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata: 
+  name: app-1
+  namespace: argocd
+spec: 
+  destination: 
+    namespace: app-1
+    server: "https://kubernetes.default.svc"
+  project: default
+  source: 
+    path: guestbook
+    repoURL: "SET_YOUR_PRIVATE_URL_HTTPS_FORMAT"
+    targetRevision: main
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+

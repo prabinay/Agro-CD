@@ -54,3 +54,4 @@ Verify application is created
 `kubectl get application -n argocd`
 
 Sync the application to create the resources in destination cluster. ACCESS ARGO CD
+

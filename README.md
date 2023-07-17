@@ -1,3 +1,4 @@
-# Agro-CD
+# Argo-CD
 
-[Agro CD User Scenarios](https://killercoda.com/mabusaa/course/argocd-endusers-scenarios)
+The repo consists of all the practices from
+[Argo CD User Scenarios](https://killercoda.com/mabusaa/course/argocd-endusers-scenarios)
